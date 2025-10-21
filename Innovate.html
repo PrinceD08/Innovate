@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Innovate">
+    <title>Innovate</title>
+</head>
+<style>
+    body{
+        background-color: black;
+        color: white;
+    }
+    h1, h2, h3, h4, h5, h6{
+        background: linear-gradient(to right, dodgerblue, purple);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+    h1{
+        font-size: 300%;
+    }
+    h2{
+        font-size: 500%;
+    }
+    #mainborder{
+        background: url(innovate4.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    p{
+        font-size: 110%;
+    }
+    #get-started, #send-message{
+        background-color: aqua;
+        padding: 2% 5%;
+        border: solid 1px aqua;
+        border-radius: 7%;
+    }
+    #get-started:hover, #send-message:hover{
+        box-shadow: 0 0 20px aqua;
+    }
+    #learn-more{
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+        -webkit-background-clip: text;
+        background-clip: text;
+        border: solid 1px rgb(140, 255, 255);
+        margin-top: 3%;
+        padding: 1% 4%;
+        border-radius: 5%;
+        color: white;
+    }
+    #learn-more:hover{
+        box-shadow: 0 0 10px aqua;
+    }
+    #mouse{
+        font-size: 250%;
+        animation: move 3s ease-in-out infinite alternate;
+    }
+    @keyframes move {
+        0%{transform: translateY(0);}
+        100%{transform: translateY(100%);}
+    }
+    span{
+        color: white;
+        -webkit-text-fill-color: white;
+    }
+    h3{
+        font-size: 400%;
+    }
+    #mainborder2, #mainborder3, #mainborder4, #mainborder5{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .border, #border1, #border2, #border3{
+        width: 50%;
+        box-shadow: 0 0 10px aqua;
+        color: aqua;
+        background-color: rgb(1, 32, 32);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        border-radius: 5%;
+        padding: 4%;
+        margin-top: 4%;
+    }
+    .border:hover{
+        box-shadow: 0 0 20px;
+    }
+    #border1:hover, #border2:hover, #border3:hover{
+        box-shadow: 0 0 20px aqua;
+    }
+    h4{
+        font-size: 500%;
+    }
+    img{
+        width: 100%;
+        border-radius: 3%;
+    }
+    .about{
+        display: inline-block;
+        background-color: rgb(138, 252, 252);
+        color: dodgerblue;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    img:hover{
+        animation: onrotate 3s ease-in-out infinite alternate;
+    }
+    @keyframes onrotate {
+        0%{transform: rotateY(0deg);}
+        100%{transform: rotateY(360deg);}
+    }
+    .secondaryborder{
+        display: flex;
+        flex-direction: row;
+    }
+    .subborder{
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 0 10px dodgerblue;
+        margin-left: 15%;
+        margin-top: 15%;
+        padding: 3% 7%;
+        border-radius: 8%;
+        background: linear-gradient(to right, dodgerblue, purple);
+    }
+    #subborder3{
+        padding-left: 15%;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    .subborder:hover{
+        box-shadow: 0 0 20px dodgerblue;
+    }
+    h5{
+        font-size: 400%;
+    }
+    h6{
+        font-size: 400%;
+    }
+    input, textarea{
+        background-color: rgb(22, 22, 22);
+        color: white;
+        padding: 5%;
+        margin-top: 9%;
+        border: solid 1px white;
+        font-size: 120%;
+        border-radius: 2em;
+    }
+    textarea{
+        padding: 15% 15%;
+    }
+    #send-message{
+        margin-top: 10%;
+        padding: 4% 20%;
+        font-size: 100%;
+        border-radius: 5em;
+    }
+    #mainborder6{
+        margin: 7% 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5%;
+        box-shadow: 0 0 20px dodgerblue;
+        border-radius: 2em;
+    }
+    #mainborder6:hover{
+        box-shadow: 0 0 30px dodgerblue;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #innovate{
+        background: linear-gradient(to right, dodgerblue, purple);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 150%;
+    }
+</style>
+<body>
+    <h1>INNOVATE</h1>
+    <div id="mainborder">
+        <h2><span>Where</span> Imagination <span>Meets</span> Innovation</h2>
+        <p>Experience the next generation of digital excellence with cutting-edge design, seamless interactions, 
+            and innovation that transforms possibilities into reality.
+        </p>
+        <button id="get-started">Get Started →</button>
+        <button id="learn-more">Learn More</button>
+        <p id="mouse">🖱</p>
+        </div>
+        <div id="mainborder2">
+    <h3><span>Powerful</span> Features</h3>
+    <p>Everything you need to build exceptional digital experiences</p>
+    <div class="border">
+        <p>⚡</p>
+        <p>Lightning Fast</p>
+        <p>Optimized performance that delivers instant results and seamless experiences.</p>
+    </div>
+    <div class="border">
+        <p>🚀</p>
+        <p>Future Ready</p>
+        <p>Built with tomorrow's technology, ready to scale with your ambitions.</p>
+    </div>
+    <div class="border">
+        <p>🎨</p>
+        <p>Stunning Design</p>
+        <p>Beautiful interfaces that captivate users and elevate your brand.</p>
+    </div>
+    <div class="border">
+        <p>🛡</p>
+        <p>Ultra Score</p>
+        <p>Enterprise-grade security protecting your data at every level.</p>
+    </div>
+    <div class="border">
+        <p>< ></p>
+        <p>Developer First</p>
+        <p>Clean, maintainance code that developers love to work with.</p>
+    </div>
+    <div class="border">
+        <p>✨</p>
+        <p>AI Powered</p>
+        <p>Intelligent features that adapt and learn from user interactions.</p>
+    </div>
+</div>
+<div id="mainborder3">
+    <h4><span>Our</span> Showcase</h4>
+    <p>Witness innovation brought to life through exceptional projects.</p>
+    <div id="border1">
+        <img src="innovate3.jpeg" alt="loading">
+        <p>Analytics Dashboard</p>
+        <p>Real-time data visualization with stunning charts and insights</p>
+        <p class="about">Data Viz</p>
+        <br>
+        <p class="about">UI/UX</p class="about">
+        <br>
+        <p class="about">Analytics</p>
+    </div>
+    <div id="border2">
+        <img src="innovate2.jpeg" alt="loading">
+        <p>Mobile Experience</p>
+        <p>Next-gen mobile interface with holograohic elements</p>
+        <p class="about">Mobile</p>
+        <br>
+        <p class="about">3D</p>
+        <br>
+        <p class="about">Interactive</p>
+    </div>
+    <div id="border3">
+        <img src="innovate.jpeg" alt="loading">
+        <p>Network visualization</p>
+        <p>Complex data relationships made beautiful and intuitive</p>
+        <p class="about">3D</p>
+        <br>
+        <p class="about">Networks</p>
+        <br>
+        <p class="about">AI</p>
+    </div>
+</div>
+<div id="mainborder4">
+    <h5><span>Trusted by</span> Thousands</h5>
+    <p>Join a global community pushing the boundaries of innovation</p>
+    <div class="secondaryborder">
+        <div class="subborder">
+            <p>🤼</p>
+            <p>50,000 Active Users</p>
+        </div>
+        <div class="subborder">
+            <p>🥇</p>
+            <p>150+ Awards Won</p>
+        </div>
+    </div>
+    <div class="secondaryborder">
+        <div class="subborder" id="subborder3">
+            <p>⚡</p>
+            <p>99% Uptime</p>
+        </div>
+        <div class="subborder">
+            <p>🌍</p>
+            <p>120+ Countries</p>
+        </div>
+    </div>
+</div>
+<div id="mainborder5">
+    <h6><span>Get In </span>Touch</h6>
+    <p>Have a project in mind? Let's create somethimg extraordinary together</p>
+    <form>
+        <input type="text" placeholder="Your name" required>
+        <br>
+        <input type="email" placeholder="Your Email" required>
+        <br>
+        <textarea name="" id="" placeholder="Your Message"></textarea>
+        <br>
+        <button type="submit" id="send-message">Send Message</button>
+    </form>
+</div>
+<div id="mainborder6">
+    <p>Connect With Us</p>
+    <p>Follow us on social media for the latest updates, insights, and behind-the-scenesglimpses of our creative prrocess.</p>
+    <p>Email : princedavid2001101@gmail.com</p>
+    <p>Phone 📞 : 07049130061</p>
+    <p>Response time : Within 24 hours</p>
+</div>
+<footer>
+    <p id="innovate">INNOVATE</p>
+    <p>Crafted with 💙 by Innovation Studio</p>
+    &copy; 2025 All rights reserved.
+</footer>
+</body>
+</html>
